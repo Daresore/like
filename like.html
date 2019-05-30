@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>like</title>
+</head>
+<body>
+<center>
+<img onclick="like1()" id="imgg" src="nolike.png" width="260" height="260">
+    <h1 id = likes>99</h1>
+</center>
+<script>
+    like = false
+    function like1() {
+        like = !like
+        if (like){
+        document.getElementById("imgg").src = 'like.png'
+
+            document.getElementById("likes").innerHTML = 100
+        }
+        else {
+            document.getElementById("imgg").src = 'nolike.png'
+            document.getElementById("likes").innerHTML = 99
+        }
+    }
+</script>
+</body>
+</html>
